@@ -10,17 +10,19 @@ Modify the program to deal with account numbers of any length (yes that is a vag
 # accounts.py
 # author - Hugo van Zyl
 
-#The below program will read in an account number of any lenght (minimum lenght is 1 digit) and display only the last 4 digits of the account number.
-#I am assuming a valid account number is anything with at least 1 character/number
+#The below program will read in an account number of any lenght (minimum lenght is 4 digits) and display only the last 4 digits of the account number.
+#I am assuming a valid account number is anything with at least 4 numbers
 
 while True: #use while loop to iterate through input until the user has inputted a valid account number
-        account_nr = input("Please enter a 1 or more digit account number - ") #define variable and equal to user input. Use int() function to convert standard string input to a integer. 
-        account_nr_length = len(account_nr)
-        if (account_nr_length>0): #if this condition is met, run the below code. 
+        account_nr = input("Please enter a 4 or more digit account number - ") #define variable and equal to user input. 
+        account_nr_length = len(account_nr) #use rgus function to get the lenght of the input
+
+        #For this task I assume any account number with at least 4 digit is valid and that a valid account number can only consist of numbers i.e. no decimals, characters, spaces, symbols etc
+        if (account_nr_length>=4 and account_nr.isdigit()==True): #if these 2 conditions are met, run the below code. Use the isdigit() function to check if all numbers were entered
             #Note if I wanted only 10 digit account numbers, I would have had account_nr_length == 10
             break #exit loop
         else: #if condition above is not met, run below code
-            print("Error - your input was invalid") #display error message to the user
+            print("Error - your input was invalid - only enter numbers between 0 and 9 (no decimals or symbols)") #display error message to the user
 
 
 print("The last 4 digits of your account number is - ","X"*(len(account_nr)-4),account_nr[-4:], sep="") 
