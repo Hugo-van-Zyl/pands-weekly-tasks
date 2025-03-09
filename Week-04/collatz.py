@@ -14,8 +14,8 @@ while True: # run this while loop at start of program
         amount_1 = int(input("Please enter a positive integer = ")) # get user input and convert to integer
         if amount_1 > 0: # if the input amount is > 0 exit this loop
             break # exit loop
-        else: # if above not valid, repromt user for a valid input
-            amount_1 = int(input("Please enter a positive integer = ")) # get user input and convert to integer
+        else: # if above not valid, show error message
+            print("Your input is invalid, please enter a positive integer - ") # display error message and loop will start over again
             
     except: # reprompt for input if input is invalid
         print("Your input is invalid, please enter a positive integer - ") # display error message and loop will start over again
