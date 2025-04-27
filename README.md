@@ -1,26 +1,35 @@
 # Programming and Scripting Weekly Tasks
-## Overview
+# Overview
 This repository contains my project work for the Programming and Scripting module, consisting of 8 weekly programming tasks that demonstrate progressive learning and application of Python concepts. Each task is stored in its own folder (Week-01 through Week-08) with appropriate documentation and commenting.
 
 # Repository Structure
 
-### Week-01/
-helloworld.py       # Simple "Hello World" program
-### Week-02/
-bank.py             # Program to add money amounts and format output
-### Week-03/
-accounts.py         # Account number masking program
-### Week-04/
-collatz.py          # Implementation of the Collatz conjecture
-### Week-05/
-weekday.py          # Program to check if today is a weekday
-### Week-06/
-squareroot.py       # Custom square root function using Newton's method
-### Week-07/
-es.py               # Program to count letter 'e' in a text file
-### Week-08/
- plottask.py         # Data visualization program
- plottask_result.png # Output image of the visualization
+### Week-01
+helloworld.py       
+- Simple "Hello World" program
+### Week-02
+bank.py             
+- Program to add money amounts and format output
+### Week-03
+accounts.py         
+- Account number masking program
+### Week-04
+collatz.py          
+- Implementation of the Collatz conjecture
+### Week-05
+weekday.py          
+- Program to check if today is a weekday
+### Week-06
+squareroot.py       
+- Custom square root function using Newton's method
+### Week-07
+es.py               
+- Program to count letter 'e' in a text file
+### Week-08
+ plottask.py         
+ - Data visualization program
+ plottask_result.png 
+ - Output image of the visualization
 
 # Weekly Tasks Description
 
@@ -75,10 +84,11 @@ A program that creates a visualization displaying:
 
 # Running the Programs
 Each program can be run from its respective folder using Python:
-- bashpython Week-01/helloworld.py
+- python Week-01/helloworld.py
 - python Week-02/bank.py
 - etc.
-For Week-07's program, provide a text file name as an argument
+
+For Week-07's program, provide a text file name as an argument (moby-dict.txt). This file should be in the same directory as the es.py file otherwise code needs to be updated for location of txt file. 
 
 # Development Approach
 Each weekly task builds upon knowledge gained in previous weeks, demonstrating progression in Python programming skills. The code is written with clarity and efficiency in mind, with extensive comments explaining the logic and approach taken.
